@@ -54,20 +54,6 @@
             color: var(--text);
         }
 
-        main {
-            padding: 2rem 0;
-        }
-
-        .contact-email {
-            font-size: 1rem;
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .contact-email:hover {
-            text-decoration: underline;
-        }
-
         footer {
             text-align: center;
             padding: 2rem 1.5rem;
@@ -90,6 +76,18 @@
         footer nav a:hover {
             color: var(--accent);
         }
+
+        .footer-email {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .footer-email:hover {
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -98,9 +96,6 @@
             <h1 class="logo">Nandy Technologies</h1>
         </header>
 
-        <main>
-            <a href="mailto:nandy@nandytech.net" class="contact-email">nandy@nandytech.net</a>
-        </main>
     </div>
 
     <footer>
@@ -109,6 +104,7 @@
             <a href="/terms">Terms of Use</a>
         </nav>
         <p>&copy; 2026 Nandy Technologies LLC</p>
+        <a href="mailto:nandy@nandytech.net" class="footer-email">nandy@nandytech.net</a>
     </footer>
 </body>
 </html>
