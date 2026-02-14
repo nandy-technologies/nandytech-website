@@ -51,21 +51,43 @@
         }
 
         .logo {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 240px;
+        }
+
+        .logo span, .logo img {
+            position: absolute;
+        }
+
+        .logo span {
             font-family: 'DM Sans', sans-serif;
             font-size: 0.75rem;
             font-weight: 700;
             letter-spacing: 0.25em;
             text-transform: uppercase;
             color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 2.5rem;
+        }
+
+        .logo .name-left {
+            left: 25%;
+            transform: translateX(-50%);
         }
 
         .logo img {
+            left: 50%;
+            transform: translateX(-50%);
             height: 240px;
             width: 240px;
             object-fit: contain;
+        }
+
+        .logo .name-right {
+            left: 75%;
+            transform: translateX(-50%);
         }
 
         footer {
@@ -108,9 +130,9 @@
     <div class="container">
         <header>
             <h1 class="logo">
-                <span>Nandy</span>
+                <span class="name-left">Nandy</span>
                 <img src="/assets/tribal-logo-transparent.png" alt="Nandy Technologies logo">
-                <span>Technologies</span>
+                <span class="name-right">Technologies</span>
             </h1>
         </header>
 
