@@ -57,6 +57,15 @@
             letter-spacing: 0.25em;
             text-transform: uppercase;
             color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 48px;
+            width: 48px;
+            object-fit: contain;
         }
 
         footer {
@@ -98,7 +107,11 @@
 <body>
     <div class="container">
         <header>
-            <h1 class="logo">Nandy Technologies</h1>
+            <h1 class="logo">
+                <span>Nandy</span>
+                <img src="/assets/tribal-logo-transparent.png" alt="Nandy Technologies logo">
+                <span>Technologies</span>
+            </h1>
         </header>
 
     </div>
